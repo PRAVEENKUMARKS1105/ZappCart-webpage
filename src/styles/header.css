@@ -1,0 +1,116 @@
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  transition: all 0.3s ease-in-out;
+  background: #f2fef8, #fee2e2; /* Light pink background to match your header */
+  padding: 16px 0;
+}
+
+.main-header.scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 24px;
+  max-width: 15rem;
+  color: #28a957; /* Changed to green to match the ZappCart logo */
+  font-weight: bold;
+}
+
+.logo img {
+  max-height: 60px; /* For the ZappCart logo image */
+  width: auto;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.desktop-nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.desktop-nav a:hover {
+  color: #28a957; /* Changed to green to match logo */
+}
+
+.download-btn {
+  background-color: #e53935; /* Keeping the red button */
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #c62828;
+}
+
+.mobile-menu-button {
+  background: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+}
+
+.mobile-nav {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav a {
+  display: block;
+  margin-bottom: 12px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover {
+  color: #28a957; /* Changed to green to match logo */
+}
+
+/* Responsive for desktop */
+@media (min-width: 768px) {
+  .desktop-nav {
+      display: flex;
+      align-items: center;
+  }
+  
+  .desktop-nav .download-btn {
+      margin-left: 24px;
+  }
+
+  .mobile-menu-button {
+      display: none;
+  }
+
+  .mobile-nav {
+      display: none;
+  }
+}

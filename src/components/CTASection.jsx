@@ -12,8 +12,8 @@ const CTASection = () => {
               Download the ZappCart app now and get 20% off on your first order. Fresh, hygienic meat is just a few taps away!
             </p>
             <div className="app-buttons">
-              <img src='./src/images/App_Store.webp' alt="App Store" className="store-badge" />
-              <img src='./src/images/play store.webp' alt="Google Play" className="store-badge" />
+              <img src='/public/images/App_Store.webp' alt="App Store" className="store-badge" />
+              <img src='/public/images/play store.webp' alt="Google Play" className="store-badge" />
             </div>
           </div>
 

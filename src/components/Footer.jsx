@@ -53,9 +53,7 @@ const Footer = () => {
               <li><a href="#" className="footer-link">Chicken</a></li>
               <li><a href="#" className="footer-link">Mutton</a></li>
               <li><a href="#" className="footer-link">Fish & Seafood</a></li>
-              <li><a href="#" className="footer-link">Marinades</a></li>
-              <li><a href="#" className="footer-link">Ready to Cook</a></li>
-              <li><a href="#" className="footer-link">Cold Cuts</a></li>
+              <li><a href="#" className="footer-link">prawns</a></li>
             </ul>
           </div>
           

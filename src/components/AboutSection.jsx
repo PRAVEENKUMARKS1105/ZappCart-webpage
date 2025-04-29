@@ -73,7 +73,7 @@ const AboutSection = () => {
           <div className="zappcart-container">
             <div className="zappcart-card">
               <div className="card-image">
-                <img src='./src/images/premium meat.jpg' alt="Premium meat selection" />
+                <img src='/public/images/premium meat.jpg' alt="Premium meat selection" />
                 <div className="card-tag">Premium Quality</div>
               </div>
               <div className="card-content">

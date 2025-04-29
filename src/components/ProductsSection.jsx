@@ -6,22 +6,22 @@ const ProductsSection = () => {
     {
       name: "Chicken",
       description: "Farm-raised, antibiotic-free chicken cuts",
-      image: "./src/images/chicken.jpg"
+      image: "/public/images/chicken.jpg"
     },
     {
       name: "Mutton",
       description: "Premium quality goat meat cuts",
-      image: "./src/images/mutton.jpg"
+      image: "/public/images/mutton.jpg"
     },
     {
       name: "Fish & Seafood",
       description: "Fresh-caught fish and seafood varieties",
-      image: './src/images/seafood.jpg'
+      image: '/public/images/seafood.jpg'
     },
     {
       name: "Prawns",
       description: "Ready-to-cook prawns products",
-      image: './src/images/prones.jpg'
+      image: '/public/images/prones.jpg'
     }
   ];
 

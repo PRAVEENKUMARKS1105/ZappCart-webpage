@@ -18,7 +18,7 @@ const Header = () => {
     <header className={`main-header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
         <div className="logo">
-        <img src='./src/images/app logo.jpg' alt="ZappCart Mobile App" className="app-promo-image" />
+        <img src='/public/images/app logo.jpg' alt="ZappCart Mobile App" className="app-promo-image" />
         </div>
 
         {/* Desktop Navigation */}

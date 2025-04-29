@@ -78,12 +78,12 @@ const HowItWorksSection = () => {
               <h3 className="app-promo-title">Download Our App</h3>
               <p className="app-promo-text">Get the ZappCart app for a seamless meat ordering experience. Track your order in real-time, access exclusive deals, and more.</p>
               <div className="app-buttons">
-                <img src='./src/images/play store.webp' alt="App Store" className="app-button-img" />
-                <img src='./src/images/App_Store.webp' alt="Google Play" className="app-button-img" />
+                <img src='/public/images/play store.webp' alt="App Store" className="app-button-img" />
+                <img src='/public/images/App_Store.webp' alt="Google Play" className="app-button-img" />
               </div>
             </div>
             <div className="app-promo-image-wrapper">
-              <img src='./src/images/app logo.jpg' alt="ZappCart Mobile App" className="app-promo-image" />
+              <img src='/public/images/app logo.jpg' alt="ZappCart Mobile App" className="app-promo-image" />
             </div>
           </div>
         </div>

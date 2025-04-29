@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-image-container">
-          <img src='./src/images/Home.jpeg' alt="Fresh meat products" className="hero-image" />
+          <img src='/public/images/Home.jpeg' alt="Fresh meat products" className="hero-image" />
         </div>
       </div>
     </section>

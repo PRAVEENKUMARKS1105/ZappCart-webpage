@@ -136,19 +136,6 @@
   display: block;
   object-fit: cover;
 }
-
-.card-tag {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 8px 12px;
-  border-radius: 30px;
-  font-size: 0.8rem;
-  font-weight: 600;
-}
-
 .card-content {
   padding: 1.5rem;
 }

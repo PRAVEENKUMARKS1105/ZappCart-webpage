@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/about.css';
+import premiumMeat from '../assets/images/premiumMeat.jpg'
 
 const AboutSection = () => {
   return (
@@ -73,8 +74,7 @@ const AboutSection = () => {
           <div className="zappcart-container">
             <div className="zappcart-card">
               <div className="card-image">
-                <img src='/public/images/premium meat.jpg' alt="Premium meat selection" />
-                <div className="card-tag">Premium Quality</div>
+                <img src={premiumMeat} alt="Premium meat selection" />
               </div>
               <div className="card-content">
                 <h3>Fresh Meat Selection</h3>
@@ -90,7 +90,7 @@ const AboutSection = () => {
                   </div>
                   <div className="feature">
                     <span className="feature-icon">✓</span>
-                    <span>Delivered in 90 Minutes</span>
+                    <span>Delivered in 45 Minutes</span>
                   </div>
                 </div>
               </div>

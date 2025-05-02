@@ -1,5 +1,8 @@
 import React from 'react';
 import '../styles/how-it-works.css'; // Make sure this path is correct
+import AppStore from '../assets/images/AppStore.jpg'
+import playstore from '../assets/images/playstore.jpg'
+import applogo from '../assets/images/applogo.jpg'
 
 const HowItWorksSection = () => {
   const steps = [
@@ -78,12 +81,12 @@ const HowItWorksSection = () => {
               <h3 className="app-promo-title">Download Our App</h3>
               <p className="app-promo-text">Get the ZappCart app for a seamless meat ordering experience. Track your order in real-time, access exclusive deals, and more.</p>
               <div className="app-buttons">
-                <img src='/public/images/play store.webp' alt="App Store" className="app-button-img" />
-                <img src='/public/images/App_Store.webp' alt="Google Play" className="app-button-img" />
+                <img src={playstore} alt="App Store" className="app-button-img" />
+                <img src={AppStore} alt="Google Play" className="app-button-img" />
               </div>
             </div>
             <div className="app-promo-image-wrapper">
-              <img src='/public/images/app logo.jpg' alt="ZappCart Mobile App" className="app-promo-image" />
+              <img src={applogo} alt="ZappCart Mobile App" className="app-promo-image" />
             </div>
           </div>
         </div>

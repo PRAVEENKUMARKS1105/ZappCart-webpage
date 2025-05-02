@@ -1,5 +1,8 @@
+
+
 import React from 'react';
 import '../styles/testimonials.css'; // Import CSS
+import { showToast } from '../utils/toastUtils'; // Import the reusable toast function
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -82,7 +85,14 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="testimonial-more">
-          <a href="#" className="btn-more">
+          <a
+            href="#"
+            className="btn-more"
+            onClick={(e) => {
+              e.preventDefault(); // Prevent default navigation
+              showToast(); // Show the toast
+            }}
+          >
             <span>Read more testimonials</span>
             <span className="arrow-icon">→</span>
           </a>

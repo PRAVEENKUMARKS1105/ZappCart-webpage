@@ -1,5 +1,9 @@
+
 import React from 'react';
 import '../styles/cta.css';
+import { showToast } from '../utils/toastUtils'; // Import the reusable toast function
+import AppStore from '../assets/images/AppStore.jpg'
+import playstore from '../assets/images/playstore.jpg'
 
 const CTASection = () => {
   return (
@@ -12,8 +16,8 @@ const CTASection = () => {
               Download the ZappCart app now and get 20% off on your first order. Fresh, hygienic meat is just a few taps away!
             </p>
             <div className="app-buttons">
-              <img src='/public/images/App_Store.webp' alt="App Store" className="store-badge" />
-              <img src='/public/images/play store.webp' alt="Google Play" className="store-badge" />
+              <img src={AppStore} alt="App Store" className="store-badge" />
+              <img src={playstore} alt="Google Play" className="store-badge" />
             </div>
           </div>
 
@@ -32,7 +36,16 @@ const CTASection = () => {
                 <label htmlFor="phone">Phone Number</label>
                 <input type="tel" id="phone" placeholder="+91 98765 43210" />
               </div>
-              <button type="submit" className="submit-btn">Subscribe Now</button>
+              <button
+                type="submit"
+                className="submit-btn"
+                onClick={(e) => {
+                  e.preventDefault(); // Prevent form submission
+                  showToast(); // Show the toast
+                }}
+              >
+                Subscribe Now
+              </button>
             </form>
           </div>
         </div>

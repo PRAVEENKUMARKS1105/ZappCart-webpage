@@ -1,7 +1,29 @@
+
+
 import React from 'react';
 import '../styles/hero.css';
+import home from '../assets/images/home.jpg'
+import { showToast } from '../utils/toastUtils'; // Import the reusable toast function
 
 const Hero = () => {
+  // Handler for "Order Now" button to show a toast message
+  const handleOrderNowClick = () => {
+    showToast(); // Use the reusable toast function
+  };
+
+  // Handler for "Learn More" button to scroll to the About section
+  const handleLearnMoreClick = () => {
+    const aboutSection = document.getElementById('about');
+    if (aboutSection) {
+      window.scrollTo({
+        top: aboutSection.offsetTop,
+        behavior: 'smooth',
+      });
+    } else {
+      console.warn('About section not found. Ensure an element with id="about" exists.');
+    }
+  };
+
   return (
     <section id="home" className="hero">
       <div className="hero-container">
@@ -11,14 +33,20 @@ const Hero = () => {
             <span className="hero-title-highlight">Delivered</span> To Your Doorstep
           </h1>
           <p className="hero-description">
-            Order premium quality, hygienically handled meat products online. From qualifed vendors to doorstep just in few minutes.
+            Order premium quality, hygienically handled meat products online. From qualified vendors to doorstep just in a few minutes.
           </p>
           <div className="hero-buttons">
-            <button className="hero-button hero-button-primary">
+            <button 
+              className="hero-button hero-button-primary" 
+              onClick={handleOrderNowClick}
+            >
               Order Now
             </button>
-            <button className="hero-button hero-button-secondary">
-              Learn More
+            <button 
+              className="hero-button hero-button-secondary" 
+              onClick={handleLearnMoreClick}
+            >
+              know More
             </button>
           </div>
           <div className="hero-features">
@@ -43,7 +71,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero-image-container">
-          <img src='/public/images/Home.jpeg' alt="Fresh meat products" className="hero-image" />
+          <img src={home} alt="Fresh meat products" className="hero-image" />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@
   width: 100%;
   z-index: 50;
   transition: all 0.3s ease-in-out;
-  background: #f2fef8, #fee2e2; /* Light pink background to match your header */
+  background: linear-gradient(to right, #f2fef8, #fee2e2); /* Updated to match hero.css */
   padding: 16px 0;
 }
 
@@ -113,4 +113,93 @@
   .mobile-nav {
       display: none;
   }
+}
+
+/* Target the specific toast container with containerId */
+#zappcart-toast.Toastify__toast-container {
+  padding: 0 !important;
+  margin: 0 auto !important;
+  position: fixed !important;
+  top: auto !important; /* Prevent top positioning */
+  bottom: 30px !important; /* Position at bottom */
+  width: 100% !important;
+  max-width: 400px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 1000 !important;
+}
+
+/* Override all possible Toastify container positions for this containerId */
+#zappcart-toast.Toastify__toast-container--top-center,
+#zappcart-toast.Toastify__toast-container--top-left,
+#zappcart-toast.Toastify__toast-container--top-right,
+#zappcart-toast.Toastify__toast-container--bottom-center,
+#zappcart-toast.Toastify__toast-container--bottom-left,
+#zappcart-toast.Toastify__toast-container--bottom-right {
+  top: auto !important;
+  bottom: 30px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Ensure toast body alignment */
+.Toastify__toast-body {
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Custom styling for the "Coming soon!" toast */
+.android-toast {
+  background-color: #333 !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 10px 20px !important;
+  margin: 0 auto !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important;
+  position: fixed !important;
+  top: auto !important; /* Prevent top positioning */
+  bottom: 30px !important; /* Position at bottom with slight offset */
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: auto !important;
+  max-width: 400px !important;
+  min-width: 200px !important;
+  z-index: 1001 !important; /* Ensure it appears above other content */
+}
+
+/* Override inline styles on toast container (if any) */
+#zappcart-toast.Toastify__toast-container[style*="position"] {
+  top: auto !important;
+  bottom: 30px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Override inline styles on individual toasts (if any) */
+.android-toast[style*="position"] {
+  top: auto !important;
+  bottom: 30px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+/* Style the toast close button (hidden but kept for consistency) */
+.android-toast .Toastify__close-button {
+  color: #fff !important;
+  opacity: 0.8 !important;
+}
+
+.android-toast .Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
+/* Style the toast progress bar (hidden but kept for consistency) */
+.android-toast .Toastify__progress-bar {
+  background-color: #28a957 !important;
 }
